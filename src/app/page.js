@@ -7,13 +7,12 @@ export default function Home() {
       {/* Hero Principal */}
       <section id="hero" className="hero" aria-label="Sección principal">
         <div className="hero-bg" aria-hidden="true">
-          {/* En React, los atributos de video cambian un poco la mayúscula: autoPlay, playsInline */}
           <video className="hero-video" autoPlay muted loop playsInline preload="metadata">
             <source src="/video/hero2.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="hero-overlay"></div>
-        <div className="container hero-grid">
+        <div className="container mx-auto hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">PMI Norte Perú Chapter</p>
             <h1>
@@ -28,7 +27,6 @@ export default function Home() {
               <Link href="#nosotros" className="btn btn--secondary">Conocer el capítulo</Link>
             </div>
           </div>
-          {/* Le añadimos la clase 'is-visible' temporalmente para que no se quede oculto por tus animaciones CSS */}
           <aside className="hero-card glass reveal is-visible">
             <figure>
               <img 
@@ -51,7 +49,7 @@ export default function Home() {
       
       {/* QUIÉNES SOMOS */}
       <section id="nosotros" className="quienes-somos">
-        <div className="container">
+        <div className="container mx-auto">
           <h2>Quiénes somos</h2>
           <p className="descripcion">
             PMI Norte Perú Chapter es una comunidad profesional afiliada al Project Management Institute (PMI) que
@@ -104,7 +102,7 @@ export default function Home() {
 
       {/* JUNTA DIRECTIVA */}
       <section id="junta-directiva" className="seccion-junta">
-        <div className="container container-noticias">
+        <div className="container mx-auto container-noticias">
           <div className="titulo-noticias">
             <h2>Junta<br /><span>Directiva</span></h2>
             <p>La Junta Directiva del PMI Norte Perú Chapter está conformada por profesionales comprometidos con
